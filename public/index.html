@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <base href="/">
 
-    <title>Starter Node and Angular</title>
+    <title>Give Me Taco</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
 
     <!-- JS -->
     <script src="libs/angular/angular.js"></script>
     <script src="libs/angular-route/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/myo.js"></script>
+    <script src="js/myohandler.js"></script>
 
     <!-- ANGULAR CUSTOM -->
     <script src="js/controllers/MainCtrl.js"></script>
@@ -21,18 +25,8 @@
     <script src="js/app.js"></script>
 </head>
 <body ng-app="givemetaco" ng-controller="MainController">
-<div class="container">
 
-    <!-- HEADER -->
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">Test</a>
-        </div>
-    </nav>
+<div class="bg" style="background-image: url('/images/taco-bg.jpg');"><h2 class="mainheader" ng-click="getTaco()">Give Me Taco</h2></div>
 
-    <!-- ANGULAR DYNAMIC CONTENT -->
-    <div ng-view></div>
-
-</div>
 </body>
 </html>
