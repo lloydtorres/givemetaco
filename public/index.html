@@ -16,7 +16,8 @@
     <script src="libs/angular-route/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/myo.js"></script>
-    <script src="js/myohandler.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+    <script src="js/binarychat.js"></script></div>
 
     <!-- ANGULAR CUSTOM -->
     <script src="js/controllers/MainCtrl.js"></script>
@@ -26,7 +27,23 @@
 </head>
 <body ng-app="givemetaco" ng-controller="MainController">
 
-<div class="bg" style="background-image: url('/images/taco-bg.jpg');"><h2 class="mainheader" ng-click="getTaco()">Give Me Taco</h2></div>
+<div class="bg" style="background-image: url('/images/taco-bg.jpg');">
+    <p class="binary-messages"></p>
+
+    <div class="binarychat">
+        <p class="text">
+        </p>
+        <p class="binary">
+            <span id="ind1">_</span>
+            <span id="ind2">_</span>
+            <span id="ind3">_</span>
+            <span id="ind4">_</span>
+            <span id="ind5">_</span>
+            <span id="ind6">_</span>
+            <span id="ind7">_</span>
+            <span id="ind8">_</span>
+        </p>
+    </div>
 
 </body>
 </html>
