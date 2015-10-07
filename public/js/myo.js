@@ -10,7 +10,7 @@
     Myo = {
         defaults : {
             api_version : 3,
-            socket_url  : "ws://127.0.0.1:10138/myo/",
+            socket_url  : "wss://127.0.0.1:10138/myo/",
             app_id      : 'com.myojs.default'
         },
         lockingPolicy : 'standard',

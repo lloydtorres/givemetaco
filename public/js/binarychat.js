@@ -1,14 +1,14 @@
-var ref = new Firebase("https://givemetaco.firebaseio.com/");
+counter = 1;
+binarystring = "";
 
-Myo.connect('com.myojs.poseDetector');
+var ref = new Firebase("https://givemetaco.firebaseio.com/");
 
 ref.child("messages").on("child_added", function(snapshot) {
     var text = snapshot.val();
     $('.binary-messages').prepend(" " + text);
 });
 
-counter = 1;
-binarystring = "";
+Myo.connect('com.myojs.poseDetector');
 
 Myo.on('pose', function(pose){
     if (pose == "fist") {
