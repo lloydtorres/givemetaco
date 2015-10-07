@@ -10,6 +10,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	background-image: url('/images/hacking.gif');
 }
 
 .binarychat {
@@ -26,7 +27,6 @@ p {
     font-size: 80px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
     text-align: center;
 }
 
@@ -36,6 +36,5 @@ p {
     left: 0;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    color: #9775AA;
+	color: white;
 }
